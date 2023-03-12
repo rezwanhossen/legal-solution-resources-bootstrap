@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+h1 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+    font-size: 68px;
+    text-align: center;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+.hero {
+    background-image: url(images/banner/banner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(images/banner/Rectangle\ 5.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
